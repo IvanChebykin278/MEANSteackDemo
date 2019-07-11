@@ -25,6 +25,7 @@ export class LoginComponent implements OnInit {
     }
 
     this.authService.authenticateUser(user).subscribe(data => {
+      console.log(user);
       if(data.success) {
         this.authService.storeUserData(data.token, data.user);
         console.log('Vse kruto');

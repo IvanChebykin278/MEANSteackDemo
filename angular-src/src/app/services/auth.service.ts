@@ -40,7 +40,7 @@ export class AuthService {
 
   loadToken() {
     const token = localStorage.getItem('id_token');
-    this.authToken = token
+    this.authToken = token;
   }
 
   loggedIn() {
