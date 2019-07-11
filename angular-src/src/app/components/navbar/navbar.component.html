@@ -15,6 +15,9 @@
         <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
             <a class="nav-link" [routerLink]="['/register']">Register</a>
         </li>
+        <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+            <a class="nav-link" (click)="oLogoutClick()" href="#">Logout</a>
+        </li>
       </ul>
     </div>
 </nav>
